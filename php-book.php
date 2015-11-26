@@ -35,3 +35,27 @@ function fib($x){
 }
 for ($x = 1; $x <= 16; $x++)
     echo (fib($x) . ", ");
+
+//-----------------
+?>
+<form action="php-book.php" method="post">
+Name: <input type="text" name="name"><br>
+Message: <textarea rows="2" cols="20" name="message"></textarea>
+
+    <input type="submit" value="Upload">
+</form>
+<?php
+$all = "Name " . $_POST['name'] . "\r\n" . "Message " . $_POST['message'] . "\r\n";
+$files = "result.txt";
+$handle = '';
+if(!$handle = fopen($files, 'a')){
+    echo "Error open";
+    exit;
+}
+if(fwrite($handle, $all) === false){
+    echo "Error write";
+}
+    else{
+        echo "Success written";
+    }
+?>
