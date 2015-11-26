@@ -9,4 +9,29 @@ while (count($arr)) $reversed[] = array_pop($arr);
 //foreach ($arr as $v) array_unshift($reversed, $v);
 for($i = 0; $i <= count($reversed); $i++) echo $reversed[$i];
 //-----------------
-
+//invert string without strrev()
+$str = "Turn this string";
+$rev;
+for ($i = strlen($str); $i >= 0; $i--) $rev[] = $str[$i];
+$revstr = implode('', $rev);
+echo "<br>" . $revstr;
+//-----------------
+//factorial function
+function fac($x){
+    if ($x === 0)
+return 1;
+    else
+        return $x * fac($x - 1);
+}
+echo "<br> " . fac(9);
+//-----------------
+//fibonacci function
+echo "<br>";
+function fib($x){
+    if($x < 3 )
+        return 1;
+    else
+        return fib($x - 1) + fib($x - 2);
+}
+for ($x = 1; $x <= 16; $x++)
+    echo (fib($x) . ", ");
