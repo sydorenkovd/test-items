@@ -40,7 +40,8 @@ for ($x = 1; $x <= 16; $x++)
 ?>
 <form action="php-book.php" method="post">
 Name: <input type="text" name="name"><br>
-Message: <textarea rows="2" cols="20" name="message"></textarea>
+Message:
+    <textarea rows="2" cols="20" name="message"></textarea>
 
     <input type="submit" value="Upload">
 </form>
@@ -58,4 +59,10 @@ if(fwrite($handle, $all) === false){
     else{
         echo "Success written";
     }
-?>
+//---------------------
+//max value from array
+     $arr = [2,342, 21, 45];
+    $max = $arr[0];
+    foreach($arr as $val)
+        if ($max < $val) $max = $val;
+echo "<br> Max value: " . $max;
