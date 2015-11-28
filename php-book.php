@@ -48,17 +48,21 @@ Message:
 <?php
 $all = "Name " . $_POST['name'] . "\r\n" . "Message " . $_POST['message'] . "\r\n";
 $files = "result.txt";
-$handle = '';
+//$handle;
 if(!$handle = fopen($files, 'a')){
     echo "Error open";
     exit;
 }
-if(fwrite($handle, $all) === false){
-    echo "Error write";
-}
-    else{
+if (empty($_POST['name']) and empty($_POST['message']))
+{
+    echo "No values";
+} else {
+    if (fwrite($handle, $all) === false) {
+        echo "Error write";
+    } else {
         echo "Success written";
     }
+}
 //---------------------
 //max value from array
      $arr = [2,342, 21, 45];
