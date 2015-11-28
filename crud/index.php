@@ -1,5 +1,9 @@
 <?php
-require  __DIR__ . '/config.php';
-require_once __DIR__ . '/controllers/NewsController.php';
-$news = new NewsController();
-$news->actionAll();
+$ctrl = isset($_GET['ctrl']) ? $_GET['ctrl'] : 'News';
+$act = isset($_GET['act']) ? $_GET['act'] : 'All';
+$classController = $ctrl . 'Controller';
+require __DIR__ . '/DB.php';
+require_once __DIR__ . '/controllers/'. $classController . '.php';
+$controller = new $classController;
+$method = "action" . $act;
+$controller->$method();

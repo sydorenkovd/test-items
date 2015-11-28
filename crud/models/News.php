@@ -1,5 +1,5 @@
 <?php
-require_once  __DIR__ . '/../config.php';
+require_once __DIR__ . '/../DB.php';
 class News
 {
     public $id;
@@ -9,9 +9,9 @@ class News
     public static function getAll()
     {
         $DBH = DB::connect();
-
         return $DBH->query('SELECT * FROM `news`');
-
+    }
+    public static function getOne(){
 
     }
 }
