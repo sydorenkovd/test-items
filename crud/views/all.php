@@ -1,4 +1,4 @@
-<?php foreach($this->data['item'] as $items) : ?>
-<h1><?=$items['title']?></h1>
-  <b><?=$items['text']?></b>
+<?php foreach($items as $item) : ?>
+<h1><?=$item['title']?></h1>
+  <b><?=$item['text']?></b>
 <? endforeach ?>

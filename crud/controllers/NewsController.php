@@ -3,15 +3,16 @@ class NewsController{
 
     public function actionAll(){
 
-        $item = News::getAll();
+        $items = News::getAll();
         $view = new View();
-        $view->assign('item', $item);
+        $view->assign('items', $items);
         $view->display('all.php');
-//        include __DIR__ . '/../views/all.php';
 }
     public function actionOne(){
         $id = $_GET['id'];
         $item = News::getOne($id);
-        include __DIR__ . '/../views/one.php';
+        $view = new View();
+        $view->assign('item', $item);
+        $view->display('one.php');
     }
 }

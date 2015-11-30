@@ -8,6 +8,9 @@ class View
         $this->data[$name] = $value;
     }
     public function display($template){
+        foreach($this->data as $key => $val){
+            $$key = $val;
+        }
         include self::PATH . $template;
     }
 
