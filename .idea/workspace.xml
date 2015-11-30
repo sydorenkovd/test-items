@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b936aa62-b8ce-49f2-a903-3bc3fdf0378f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crud/controllers/NewsController.php" afterPath="$PROJECT_DIR$/crud/controllers/NewsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crud/models/News.php" afterPath="$PROJECT_DIR$/crud/models/News.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crud/classes/View.php" afterPath="$PROJECT_DIR$/crud/classes/View.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -26,22 +26,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="View.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="View.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crud/classes/View.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.576923">
-              <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.57781756">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewsController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NewsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crud/controllers/NewsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48658317">
+            <state vertical-scroll-proportion="-10.461538">
               <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="News.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crud/models/News.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.769231">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding>
+                <marker date="1448877996983" expanded="true" signature="173:193" placeholder="SELECT * FRO..." />
+                <marker date="1448877996983" expanded="true" signature="297:329" placeholder="SELECT * FRO..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -77,12 +90,12 @@
         <option value="$PROJECT_DIR$/crud/views/AllNews.php" />
         <option value="$PROJECT_DIR$/crud/DB.php" />
         <option value="$PROJECT_DIR$/crud/views/one.php" />
-        <option value="$PROJECT_DIR$/crud/models/News.php" />
         <option value="$PROJECT_DIR$/crud/autoload.php" />
         <option value="$PROJECT_DIR$/crud/index.php" />
         <option value="$PROJECT_DIR$/crud/views/all.php" />
-        <option value="$PROJECT_DIR$/crud/classes/View.php" />
         <option value="$PROJECT_DIR$/crud/controllers/NewsController.php" />
+        <option value="$PROJECT_DIR$/crud/models/News.php" />
+        <option value="$PROJECT_DIR$/crud/classes/View.php" />
       </list>
     </option>
   </component>
@@ -352,7 +365,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448876588853</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="setter">
+      <created>1448877113738</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1448877113738</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -404,7 +423,8 @@
     <MESSAGE value="autoload" />
     <MESSAGE value="class View" />
     <MESSAGE value="render" />
-    <option name="LAST_COMMIT_MESSAGE" value="render" />
+    <MESSAGE value="setter" />
+    <option name="LAST_COMMIT_MESSAGE" value="setter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -424,8 +444,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
           <folding>
-            <marker date="1448743203950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448743203950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1448877996983" expanded="true" signature="173:193" placeholder="SELECT * FRO..." />
+            <marker date="1448877996983" expanded="true" signature="297:329" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
@@ -475,8 +495,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
           <folding>
-            <marker date="1448743203950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448743203950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
+            <marker date="1448877996983" expanded="true" signature="173:193" placeholder="SELECT * FRO..." />
+            <marker date="1448877996983" expanded="true" signature="297:329" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>
@@ -562,14 +582,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/models/News.php">
+    <entry file="file://$PROJECT_DIR$/crud/views/one.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding>
-            <marker date="1448743203950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-            <marker date="1448743203950" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..." />
-          </folding>
+        <state vertical-scroll-proportion="0.09123435">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -581,26 +598,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/classes/View.php">
+    <entry file="file://$PROJECT_DIR$/crud/models/News.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.576923">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/crud/views/one.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09123435">
-          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <marker date="1448877996983" expanded="true" signature="173:193" placeholder="SELECT * FRO..." />
+            <marker date="1448877996983" expanded="true" signature="297:329" placeholder="SELECT * FRO..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/crud/controllers/NewsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48658317">
+        <state vertical-scroll-proportion="-10.461538">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/classes/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57781756">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>

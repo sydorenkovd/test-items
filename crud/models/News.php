@@ -15,3 +15,12 @@ class News
     return $DBH->query('SELECT * FROM `news` WHERE id = ' . $id);
     }
 }
+/*
+ * ClassHinting
+ * принимает только модели класса News
+ * public function foo(News $model){
+ * }
+ * принимает только models which implements interface IModel
+ * public function far(IModel $model){
+ * }
+ */
