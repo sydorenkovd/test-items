@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b936aa62-b8ce-49f2-a903-3bc3fdf0378f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crud/models/News.php" afterPath="$PROJECT_DIR$/crud/models/News.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crud/classes/View.php" afterPath="$PROJECT_DIR$/crud/classes/View.php" />
+    <list default="true" id="b936aa62-b8ce-49f2-a903-3bc3fdf0378f" name="Default" comment="buffer render">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/crud/classes/AbstractModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/crud/classes/DB.php" afterPath="$PROJECT_DIR$/crud/classes/DB.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.loc.iws" />
@@ -26,11 +26,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="View.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="View.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crud/classes/View.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57781756">
-              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            <state vertical-scroll-proportion="-6.5384617">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractModel.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/crud/classes/AbstractModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.576923">
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DB.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/crud/classes/DB.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27370304">
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -96,6 +116,8 @@
         <option value="$PROJECT_DIR$/crud/controllers/NewsController.php" />
         <option value="$PROJECT_DIR$/crud/models/News.php" />
         <option value="$PROJECT_DIR$/crud/classes/View.php" />
+        <option value="$PROJECT_DIR$/crud/classes/AbstractModel.php" />
+        <option value="$PROJECT_DIR$/crud/classes/DB.php" />
       </list>
     </option>
   </component>
@@ -371,7 +393,13 @@
       <option name="project" value="LOCAL" />
       <updated>1448877113738</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="buffer render">
+      <created>1448878918222</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1448878918222</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -424,7 +452,8 @@
     <MESSAGE value="class View" />
     <MESSAGE value="render" />
     <MESSAGE value="setter" />
-    <option name="LAST_COMMIT_MESSAGE" value="setter" />
+    <MESSAGE value="buffer render" />
+    <option name="LAST_COMMIT_MESSAGE" value="buffer render" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -558,14 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/classes/DB.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crud/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27321428">
@@ -598,14 +619,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/models/News.php">
+    <entry file="file://$PROJECT_DIR$/crud/classes/View.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.769231">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding>
-            <marker date="1448877996983" expanded="true" signature="173:193" placeholder="SELECT * FRO..." />
-            <marker date="1448877996983" expanded="true" signature="297:329" placeholder="SELECT * FRO..." />
-          </folding>
+        <state vertical-scroll-proportion="-6.5384617">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -617,10 +635,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/crud/classes/View.php">
+    <entry file="file://$PROJECT_DIR$/crud/classes/AbstractModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57781756">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state vertical-scroll-proportion="-4.576923">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/models/News.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <marker date="1448877996983" expanded="true" signature="173:193" placeholder="SELECT * FRO..." />
+            <marker date="1448877996983" expanded="true" signature="297:329" placeholder="SELECT * FRO..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crud/classes/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27370304">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding />
         </state>
       </provider>
