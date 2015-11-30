@@ -1,6 +1,6 @@
 <?php
 class DB{
-    private $DBH;
+//    private $DBH;
 //    public function __construct(){
 //$this->DBH = new PDO("mysql:host=localhost;dbname=test", 'root', '');
 //    }

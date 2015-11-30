@@ -15,4 +15,12 @@ class NewsController{
         $view->item = $item;
         $view->display('one.php');
     }
+
+    public function actionInsert()
+    {
+        $article = new News();
+        $article->title = 'Hello';
+        $article->text = 'Hello, World';
+        $article->insert();
+    }
 }
