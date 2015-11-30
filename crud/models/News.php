@@ -37,6 +37,11 @@ class News extends AbstractModel
         $STH = $DBH->prepare($sql);
         return $STH->execute($val);
     }
+
+    public function update()
+    {
+
+    }
 }
 /*
  * ClassHinting

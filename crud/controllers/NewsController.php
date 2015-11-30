@@ -18,9 +18,17 @@ class NewsController{
 
     public function actionInsert()
     {
+        $view = new View();
+        $view->display('insert.php');
         $article = new News();
-        $article->title = 'Hello';
-        $article->text = 'Hello, World';
+        $article->title = $_POST['title'];
+        $article->text = $_POST['text'];
         $article->insert();
+    }
+
+    public function actionUpdate()
+    {
+        $view = new View();
+        $view->display('update.php');
     }
 }
