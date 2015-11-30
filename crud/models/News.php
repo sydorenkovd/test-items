@@ -40,7 +40,21 @@ class News extends AbstractModel
 
     public function update()
     {
+        $val = $this->data;
+        $sql = 'UPDATE ' . static::$table . ' SET
+		text = ' . $val['text'] . ' and title = ' . $val['title'] .
+            ' WHERE id = ?';
+        $DBH = DB::connect();
+        $STH = $DBH->prepare($sql);
+        return $STH->execute($this->id);
+    }
 
+    public function delete()
+    {
+        $DBH = DB::connect();
+        $sql = 'DELETE FROM ' . static::$table . ' WHERE id = ?';
+        $STH = $DBH->prepare($sql);
+        return $STH->execute($this->id);
     }
 }
 /*

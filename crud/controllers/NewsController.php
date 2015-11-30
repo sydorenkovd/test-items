@@ -30,5 +30,9 @@ class NewsController{
     {
         $view = new View();
         $view->display('update.php');
+        $article = new News();
+        $article->title = $_POST['title'];
+        $article->text = $_POST['text'];
+        $article->update();
     }
 }
