@@ -5,14 +5,14 @@ class NewsController{
 
         $items = News::getAll();
         $view = new View();
-        $view->assign('items', $items);
+        $view->items = $items;
         $view->display('all.php');
 }
     public function actionOne(){
         $id = $_GET['id'];
         $item = News::getOne($id);
         $view = new View();
-        $view->assign('item', $item);
+        $view->item = $item;
         $view->display('one.php');
     }
 }
