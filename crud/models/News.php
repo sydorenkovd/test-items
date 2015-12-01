@@ -36,7 +36,8 @@ class News extends AbstractModel
     {
         $DBH = DB::connect();
         $sql = 'SELECT * FROM ' . static::$table . ' WHERE ' . $column . ' = "' . $value . '"';
-        return $DBH->query($sql);
+        $STH = $DBH->query($sql);
+        return $STH->fetchObject();
 
     }
 

@@ -32,12 +32,11 @@ class NewsController{
 
     public function actionUpdate()
     {
-        $view = new View();
-        $view->display('update.php');
-        $article = new News();
-        $article->title = $_POST['title'];
-        $article->text = $_POST['text'];
+        $article = News::findByColumn('title', 'Hello');
+        $article->title = "New article";
+        var_dump($article);
         $article->update();
+
     }
 
     public function actionFindByColumn()
