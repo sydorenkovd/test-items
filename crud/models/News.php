@@ -1,4 +1,8 @@
 <?php
+namespace app\models;
+
+use app\classes\DB;
+use app\models\AbstractModel;
 
 class News extends AbstractModel
 {

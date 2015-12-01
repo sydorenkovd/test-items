@@ -1,4 +1,8 @@
 <?php
+namespace app\controllers;
+
+use app\models\News;
+use app\classes\View;
 class NewsController{
 
     public function actionAll(){

@@ -1,5 +1,5 @@
 <?php
-
+namespace app\classes;
 class View
 {
     protected $data = [];
