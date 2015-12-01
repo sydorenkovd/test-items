@@ -39,4 +39,12 @@ class NewsController{
         $article->text = $_POST['text'];
         $article->update();
     }
+
+    public function actionFindByColumn()
+    {
+        $item = News::findByColumn('title', 'Hello');
+        $view = new View();
+        $view->item = $item;
+        $view->display('findByColumn.php');
+    }
 }

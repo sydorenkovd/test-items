@@ -17,6 +17,11 @@ class News extends AbstractModel
     {
         return $this->data[$k];
     }
+
+    public function __isset($k)
+    {
+        return isset($this->data[$k]);
+    }
     public static function getAll()
     {
         $DBH = DB::connect();
@@ -25,6 +30,14 @@ class News extends AbstractModel
     public static function getOne($id){
         $DBH = DB::connect();
         return $DBH->query('SELECT * FROM ' . static::$table . ' WHERE id = ' . $id);
+    }
+
+    public static function findByColumn($column, $value)
+    {
+        $DBH = DB::connect();
+        $sql = 'SELECT * FROM ' . static::$table . ' WHERE ' . $column . ' = "' . $value . '"';
+        return $DBH->query($sql);
+
     }
 
     public function insert()
