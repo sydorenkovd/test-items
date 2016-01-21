@@ -1,0 +1,51 @@
+<?php
+
+function softheme_schema() {
+  $schema['wSoftheme'] = [
+    'description' => 'Custom table from My database module.',
+    'fields' => [
+      'id' => [
+        'description' => 'The primary identifier for a record.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ],
+      'name' => [
+        'description' => 'Text field.',
+        'type' => 'varchar',
+        'length' => 150,
+        'not null' => FALSE,
+      ],
+      'salary' => [
+        'description' => 'Field for integer number.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'country' => [
+        'description' => 'Text field.',
+        'type' => 'varchar',
+        'length' => 150,
+        'not null' => FALSE,
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+  return $schema;
+}
+/**
+ * Реализация hook_install()
+ * Создание таблицы при инсталляции модуля
+ */
+function softheme_install() {
+    drupal_install_schema('wSoftheme');
+}
+ 
+/**
+ * Реализация hook_uninstall()
+ * Удаление таблицы при удалении модуля
+ */
+function softheme_uninstall() {
+    drupal_uninstall_schema('wSoftheme');
+}

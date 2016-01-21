@@ -1,0 +1,77 @@
+<?php
+function softheme_menu(){
+  $items = [];
+  $items["test_url"] = [
+'title' => 'Softheme',
+'page callback' => 'main_function',
+'type' => MENU_NORMAL_ITEM,
+'access callback' => true,
+'page arguments' => ['softheme_form'],
+    'access arguments' => ['administer site configuration'],
+  ];
+  return $items;
+}
+
+// form
+function softheme_form($form, &$form_state){
+  $form = [];
+  $form['name'] = [
+    '#type' => 'textfield',
+    '#title' => t('Employee'),
+    '#default_value' => t(''),
+    '#required' => true,
+  ];
+  $form['settings'] = [
+    '#type' => 'radios',
+    '#title' => t('Salary softheme'),
+    '#options' => array(0 => t('500'), 1 => t(1000), 'default' => t('1500')),
+    '#description' => t('Choose salary for employee'),
+    '#default_value' => 'default',
+    '#required' => true,
+    '#states' =>[
+    'visible' => [
+    'input[name =>"settings"]' => ['checked' => 1]
+     ]
+  ]
+];
+  $form['country'] = [
+        '#type'=>'select',
+        '#title'=>t('Select your country'),
+        '#required' => true,
+        '#options'=>array('default' => '-- select from the list --', 1 => 'USA', 2 => 'UK', 3 => 'France', 4 => 'Japan'),
+        '#default_value' => 'default',
+      ];
+  $form['submit'] = [
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  ];
+  return $form;
+}
+//validation
+function softheme_form_validate($form, &$form_state){
+	if(!(preg_match("/[a-zA-Z]{3,}/", $form_state['values']['name']))){
+		form_set_error('name', t('Not valid name'));
+	}
+  if($form_state['values']['country'] == 'default'){
+    form_set_error('name', t('Not valid select'));
+  }
+  if($form_state['values']['settings'] == 'default'){
+    form_set_error('name', t('Not valid salary'));
+  }
+}
+function main_function(){
+  $form = drupal_get_form('softheme_form'); //получаем поля формы
+  $form = drupal_render($form); //рендерим форму
+  return $form .'Softheme test from';
+}
+
+function softheme_form_submit($form, $form_state){
+	// $name = $form_state['values']['name'];
+	// $settings = $form_state['values']['settings'];
+	// $str = $name . " - have salary " . $settings;
+	// $file_name = 'public://'.md5(time()) . '.txt';
+	// $file = fopen($file_name, "w+");
+	// fputs($file, $str);
+	// fclose($file);
+	drupal_set_message('Succes');
+}
