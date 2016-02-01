@@ -10,15 +10,16 @@
 
 class EnglishTranslator extends Translator
 {
-    public function getLang($e)
+    public $lang = '';
+
+    public function setLang($e)
     {
-        return $e;
+        return $this->lang = $e;
     }
 
     public function translate()
     {
-        $lang = '';
-        return "I am translator from " . $this->getLang($lang);
+        return "I am translator from " . $this->setLang($this->lang);
     }
 }
 
@@ -26,9 +27,9 @@ abstract class Translator
 {
     abstract function translate();
 
-    abstract function getLang($e);
+    abstract function setLang($e);
 }
 
 $engTrans = new EnglishTranslator();
-$engTrans->getLang('English');
+$engTrans->setLang('English');
 echo $engTrans->translate();
