@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b936aa62-b8ce-49f2-a903-3bc3fdf0378f" name="Default" comment="lang stuff">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phprush/level13/less4.php" afterPath="$PROJECT_DIR$/phprush/level13/less4.php" />
+    <list default="true" id="b936aa62-b8ce-49f2-a903-3bc3fdf0378f" name="Default" comment="set lang stuff">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/phprush/level13/less6.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="test.loc.iws" />
@@ -25,14 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="less4.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/phprush/level13/less4.php">
+      <file leaf-file-name="less6.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/phprush/level13/less6.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42218247">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding>
-                <element signature="e#7#297#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.57781756">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -78,6 +76,7 @@
         <option value="$PROJECT_DIR$/phprush/level12/less4.php" />
         <option value="$PROJECT_DIR$/phprush/level13/less2.php" />
         <option value="$PROJECT_DIR$/phprush/level13/less4.php" />
+        <option value="$PROJECT_DIR$/phprush/level13/less6.php" />
       </list>
     </option>
   </component>
@@ -374,7 +373,13 @@
       <option name="project" value="LOCAL" />
       <updated>1454357293209</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="set lang stuff">
+      <created>1454357584638</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1454357584638</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -440,7 +445,8 @@
     <MESSAGE value="phprush works" />
     <MESSAGE value="interfaces" />
     <MESSAGE value="lang stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="lang stuff" />
+    <MESSAGE value="set lang stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="set lang stuff" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -448,19 +454,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/phprush/level11/les6_3.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#7#112#0#PHP" expanded="true" />
-            <marker date="1454329095063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1454329095063" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1454329095063" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phprush/level12/less2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -825,10 +818,18 @@
     <entry file="file://$PROJECT_DIR$/phprush/level13/less4.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42218247">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
             <element signature="e#7#297#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phprush/level13/less6.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57781756">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
