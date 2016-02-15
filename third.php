@@ -12,17 +12,21 @@
 // while($row = $STH->fetch()) {
 //     echo "On_stock: " . $row->on_stock;
 // }
-$arr = [];
-$arr[] = 'Vasay';
-$arr[] = 'Masha';
-$arr[] = 'Ptay';
+//---------------------
+// $arr = [];
+// $arr[] = 'Vasay';
+// $arr[] = 'Masha';
+// $arr[] = 'Ptay';
 // $str = implode(', ', $arr);
 // var_dump($str);
 // echo "<br>";
 // $arr1 = explode(', ', $str);
 // var_dump($arr1);
-var_dump($arr);
-echo "<hr>";
-$arr = [];
+// var_dump($arr);
+// echo "<hr>";
+// $arr = [];
 
-echo $arr[1];
+// echo $arr[1];
+$s = 'MyClassfil';
+$res = substr_replace($s, '', -3);
+echo $res;
