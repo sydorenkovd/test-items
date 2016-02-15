@@ -1,5 +1,5 @@
 <?php
-
+spl_autoload_register();
 /* Куриная фабрика
 Написать Фабрику(Factory) по производству кур(Hen)
 1. Создать класс Hen
@@ -25,124 +25,30 @@
 9. Все созданные вами классы должны быть в отдельных файлах
 */
 
-abstract class Hen
+class HenFactory
 {
-    abstract public function getCountOfEggsPerMonth($number, $typeOf);
-
-    public function getDescription()
+    public function getHen($class = '', $number = null, $typeOf = 1)
     {
-        return 'I am a chiken';
+        switch ($class) {
+            case 'Russia':
+                return new RussianHen($number, $typeOf);
+                break;
+            case 'Ukraine':
+                return new UkrainianHen($number, $typeOf);
+                break;
+            case 'Moldova':
+                return new MoldovanHen($number, $typeOf);
+                break;
+            case 'Belarussia':
+                return new BelarussianHen($number, $typeOf);
+                break;
+            default :
+                return 'No such country';
+        }
     }
 }
 
-class RussianHen extends Hen
-{
-    public $number = null;
-    public $typeOf = '1';
+$fabric = new HenFactory();
+$russia = $fabric->getHen('Russia', 12, 2);
+echo $russia->getDescription();
 
-    public function __construct($number, $typeOf)
-    {
-        $number = $this->number;
-        $typeOf = $this->typeOf;
-    }
-
-    public function getCountOfEggsPerMonth($number = null, $typeOf = 1)
-    {
-        return $number * $typeOf;
-    }
-
-    public function getDescription()
-    {
-        $parent = parent::getDescription();
-        $class = new ReflectionClass($this);
-        $classname = $class->getName();
-        $cname = substr_replace($classname, '', -3);
-        return $parent . " my country - {$cname} and I've been producing "
-        . $this->getCountOfEggsPerMonth($this->number, $this->typeOf)
-        . " eggs per month";
-    }
-}
-
-class UkrainianHen extends Hen
-{
-    public $number = null;
-    public $typeOf = '1';
-
-    public function __construct($number, $typeOf)
-    {
-        $number = $this->number;
-        $typeOf = $this->typeOf;
-    }
-
-    public function getCountOfEggsPerMonth($number = null, $typeOf = 1)
-    {
-        return $number * $typeOf;
-    }
-
-    public function getDescription()
-    {
-        $parent = parent::getDescription();
-        $class = new ReflectionClass($this);
-        $classname = $class->getName();
-        $cname = substr_replace($classname, '', -3);
-        return $parent . " my country - {$cname} and I've been producing "
-        . $this->getCountOfEggsPerMonth($this->number, $this->typeOf)
-        . " eggs per month";
-    }
-}
-
-class MoldovanHen extends Hen
-{
-    public $number = null;
-    public $typeOf = '1';
-
-    public function __construct($number, $typeOf)
-    {
-        $number = $this->number;
-        $typeOf = $this->typeOf;
-    }
-
-    public function getCountOfEggsPerMonth($number = null, $typeOf = 1)
-    {
-        return $number * $typeOf;
-    }
-
-    public function getDescription()
-    {
-        $parent = parent::getDescription();
-        $class = new ReflectionClass($this);
-        $classname = $class->getName();
-        $cname = substr_replace($classname, '', -3);
-        return $parent . " my country - {$cname} and I've been producing "
-        . $this->getCountOfEggsPerMonth($this->number, $this->typeOf)
-        . " eggs per month";
-    }
-}
-
-class BelarussianHen extends Hen
-{
-    public $number = null;
-    public $typeOf = '1';
-
-    public function __construct($number, $typeOf)
-    {
-        $this->number = $number;
-        $this->typeOf = $typeOf;
-    }
-
-    public function getCountOfEggsPerMonth($number, $typeOf)
-    {
-        return $number * $typeOf;
-    }
-
-    public function getDescription()
-    {
-        $parent = parent::getDescription();
-        $class = new ReflectionClass($this);
-        $classname = $class->getName();
-        $cname = substr_replace($classname, '', -4);
-        return $parent . " my country - {$cname} and I've been producing "
-        . $this->getCountOfEggsPerMonth($this->number, $this->typeOf)
-        . " eggs per month";
-    }
-}
