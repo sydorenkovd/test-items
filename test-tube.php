@@ -18,9 +18,37 @@
 //                    echo $mounth[$i];
 //                    echo 'Point' . "<br>";
 //                }\
-class MyClass
-{
+//class MyClass
+//{
+//}
+//
+//$s = new ReflectionClass('MyClass');
+//echo $s->getName();
+
+$str = 'Yep, i waas fuck fucked in 1993';
+if (preg_replace('/fuck(ed)*/', '*', $str)) {
+//    echo $str;
 }
 
-$s = new ReflectionClass('MyClass');
-echo $s->getName();
+
+preg_match_all('/([a-z]+)+ (\d+)/', $str, $matches);
+var_dump($matches);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
