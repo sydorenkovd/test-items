@@ -9,3 +9,15 @@ max(
 )
 FROM test;
 */
+// $arr = [
+// ['name' => 'John', 'age' => '21'],
+// ['name' => 'Kevin', 'age' => '23'],
+// ['name' => 'Frank', 'age' => '11'],
+// ];
+// foreach($arr as $a){
+// 	if($a['age'] > 15){
+// 		$filter[] = $a;
+// 	}
+	
+// }
+// print_r($filter);
