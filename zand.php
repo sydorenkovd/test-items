@@ -37,3 +37,8 @@ if($s instanceof Sample){
 	echo "It's an object of Sample";
 }
 echo Sample::class; // from 5.5 php, with full namespace
+if(is_callable([$s, "getSample"])){
+	echo 'GetSample is method in Sample class';
+} else {
+	echo "Wrong!";
+}
