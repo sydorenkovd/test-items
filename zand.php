@@ -1,4 +1,6 @@
 <?php
+namespace MyPackadge;
+
 class Sample{
  public $test = 'AJ';
  public function here(){
@@ -34,3 +36,4 @@ echo "</pre>";
 if($s instanceof Sample){
 	echo "It's an object of Sample";
 }
+echo Sample::class; // from 5.5 php, with full namespace
