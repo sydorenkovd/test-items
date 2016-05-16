@@ -23,3 +23,8 @@ $st = function($s){
 	return $s->set;
 };
 echo $st($s);
+$arr = [];
+echo "<pre>";
+$arr = get_declared_classes();
+echo count($arr);
+echo "</pre>";
