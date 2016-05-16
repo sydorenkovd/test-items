@@ -4,6 +4,9 @@ class Sample{
  public function here(){
  	return $this->test;
  }
+ public function getSample(){
+ 	return new self();
+ }
  public function __get($property){
  	return $this->property;
  	}
@@ -25,6 +28,9 @@ $st = function($s){
 echo $st($s);
 $arr = [];
 echo "<pre>";
-$arr = get_declared_classes();
+$arr = get_declared_classes(); // all standart php core classes
 echo count($arr);
 echo "</pre>";
+if($s instanceof Sample){
+	echo "It's an object of Sample";
+}
