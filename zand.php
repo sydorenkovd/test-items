@@ -1,5 +1,5 @@
 <?php
-namespace MyPackadge;
+// namespace MyPackadge;
 
 class Sample{
  public $test = 'AJ';
@@ -33,12 +33,47 @@ echo "<pre>";
 $arr = get_declared_classes(); // all standart php core classes
 echo count($arr);
 echo "</pre>";
+//------------------
 if($s instanceof Sample){
 	echo "It's an object of Sample";
 }
 echo Sample::class; // from 5.5 php, with full namespace
+//-----------------------------
 if(is_callable([$s, "getSample"])){
 	echo 'GetSample is method in Sample class';
 } else {
 	echo "Wrong!";
 }
+//-------------------
+$prod_class = new ReflectionClass('Sample');
+Reflection::export($prod_class);
+echo $prod_class->getName();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
