@@ -18,3 +18,8 @@ $s = new Sample();
 // $s->t;
 $s->set = 're';
 echo $s;
+// --------
+$st = function($s){
+	return $s->set;
+};
+echo $st($s);
