@@ -45,9 +45,10 @@ if(is_callable([$s, "getSample"])){
 	echo "Wrong!";
 }
 //-------------------
-$prod_class = new ReflectionClass('Sample');
-Reflection::export($prod_class);
-echo $prod_class->getName();
+// $prod_class = new ReflectionClass('Sample');
+// Reflection::export($prod_class);
+// echo $prod_class->getName();
+//------------------
 
 
 
