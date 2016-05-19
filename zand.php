@@ -49,7 +49,26 @@ if(is_callable([$s, "getSample"])){
 // Reflection::export($prod_class);
 // echo $prod_class->getName();
 //------------------
-
+class Worker{
+	private $promice = true;
+private static $isDoneCount = 0;
+public function work(){
+	if ($this->getPromice()){
+$dayCount = $this->isDoneCount();
+do{
+	$dayCount++;
+} while()
+	}
+}
+public function getPromice(){
+	return $this->promice;
+}
+public function getIsDoneCount(){
+	return self::$isDoneCount;
+}
+}
+$worker = new Worker();
+echo $worker->getIsDoneCount();
 
 
 
