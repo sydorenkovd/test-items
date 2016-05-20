@@ -57,7 +57,10 @@ public function work(){
 $dayCount = $this->isDoneCount();
 do{
 	$dayCount++;
-} while()
+} while(date('d m Y') =< '01 06 2016')
+	}
+	if($dayCount){
+		return "Job is done";
 	}
 }
 public function getPromice(){
@@ -69,6 +72,7 @@ public function getIsDoneCount(){
 }
 $worker = new Worker();
 echo $worker->getIsDoneCount();
+$worker->work();
 
 
 
