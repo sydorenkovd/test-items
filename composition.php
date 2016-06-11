@@ -56,10 +56,44 @@ class HomeEvent extends Events{}
 /*
  * create two objects and put them into array
  */
-$events[] = new WorkEvent(3, new DayLyPrizeStrategy());
-$events[] = new HomeEvent(3, new FixedPrizeStrategy());
-foreach($events as $event){
-    echo $event->cost() . "$ during ".$event->getDuration() ." days" . ' with charge type: ' .$event->chargeType() . "<br>";
+//$events[] = new WorkEvent(3, new DayLyPrizeStrategy());
+//$events[] = new HomeEvent(3, new FixedPrizeStrategy());
+//foreach($events as $event){
+//    echo $event->cost() . "$ during ".$event->getDuration() ." days" . ' with charge type: ' .$event->chargeType() . "<br>";
 //    echo "<hr>";
 //    print_r($event);
+//}
+class RegistrationEvents{
+    public function register(Events $events){
+        $note = Notifier::getNotifier();
+        $note->inform("notification: new lesson: cost: ({$events->cost()})");
+    }
 }
+abstract class Notifier{
+public static function getNotifier(){
+    switch(rand(1,2)){
+        case 1:
+            return new MailNotifier();
+        break;
+        case 2:
+            return new TextNotifier();
+            break;
+    }
+}
+    abstract function inform($message);
+}
+class MailNotifier extends Notifier{
+public function inform($message){
+echo "MAIL " . $message . "<br>";
+}
+}
+class TextNotifier extends Notifier{
+    public function inform($message){
+echo "Text " . $message . "<br>";
+}
+}
+$eventl = new WorkEvent(4, new DayLyPrizeStrategy());
+$event2 = new HomeEvent(4, new FixedPrizeStrategy());
+$mgr = new RegistrationEvents();
+$mgr->register($eventl);
+$mgr->register($event2);
