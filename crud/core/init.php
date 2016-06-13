@@ -12,15 +12,15 @@ $GLOBALS['config'] = [
     'mysql' => [
         'host' => '127.0.0.1',
         'username' => 'root',
-        'password' => '',
-        'db' => 'registration'
+        'password' => 'root',
+        'db' => 'test'
     ],
     'remember' => [
         'cookie_name' => 'hash',
         'cookie_expiry' => 604800,
     ],
     'session' => [
-        'session_name' => 'user',
+        'session_name' => 'root',
         'token_name' => 'token'
     ]
 ];
